@@ -14,12 +14,7 @@
         compatible = "zmk,keymap";
 
         base {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
+            display-name = "Base";
             bindings = <
 &kp TAB     &kp Q             &kp W               &kp E           &kp R             &kp T        &kp Y      &kp U        &kp I           &kp O                &kp P              &kp BSPC
 &kp ESCAPE  &mt LEFT_SHIFT A  &mt LEFT_CONTROL S  &mt LEFT_WIN D  &mt LEFT_SHIFT F  &kp G        &kp H      &mt RSHFT J  &mt LEFT_WIN K  &mt RIGHT_CONTROL L  &mt LEFT_ALT SEMI  &kp SQT
@@ -29,12 +24,7 @@
         };
 
         number {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
+            display-name = "Numbers";
             bindings = <
 &kp TAB     &kp N1        &kp N2        &kp N3        &kp N4             &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3       &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
@@ -44,12 +34,7 @@
         };
 
         sign {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
+            display-name = "Signs";
             bindings = <
 &kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
 &kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
@@ -59,6 +44,7 @@
         };
 
         functions {
+            display-name = "Functions";
             bindings = <
 &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5        &kp F6      &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
 &trans  &trans  &trans  &trans  &trans  &trans        &trans      &trans  &trans  &trans  &trans   &kp F12
