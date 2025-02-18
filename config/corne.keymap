@@ -13,25 +13,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        combo_bascspace {
-            timeout-ms = <50>;
-            bindings = <&kt BACKSPACE>;
-            key-positions = <10 9>;
-            require-prior-idle-ms = <100>;
-            layers = <0 1 2 3>;
-        };
-
-        combo_esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <1 2>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <100>;
-            layers = <0 1 2 3>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
